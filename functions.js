@@ -15,11 +15,9 @@ function lowerCase(string){
 }
 function capitalize(string, all){
   if (all){
-    string = string.split(' ').map(function(a){
+    return string.split(' ').map(function(a){
       return capitalize(a, false);
-    });
-    //for (var i = 0; i < temp.length)
-    return string;
+    }).join(' ');
   } else {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
