@@ -18,13 +18,6 @@ function angle (aNum) {
     }
 }
 
-
-var aNum = prompt("Please enter an angle degree", "");
-if (aNum != null) {
-    document.getElementById("demo").innerHTML =
-    "Hello " + aNum + "! How are you today?";
-}
-
 angle(25);
 angle(60);
 angle(80);
