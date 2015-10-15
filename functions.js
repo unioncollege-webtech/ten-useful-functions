@@ -2,28 +2,28 @@
 
 function angle (aNum) {
        if ( aNum === 90) {
-        console.log("It's a right Angle");
+        return "It's a right Angle";
     } else if (aNum <= 90 && aNum > 0) {
-        console.log("It's an acute Angle");
+        return"It's an acute Angle";
     } else if (aNum == 180) {
-        console.log("It's a straight Angle");
+        return"It's a straight Angle";
     } else if (aNum < 180 && aNum > 90) {
-        console.log("It's a obtuse Angle");
+        return"It's a obtuse Angle";
     } else if (aNum >180 && aNum < 360) {
-        console.log("It's a reflex Angle");
+        return"It's a reflex Angle";
     } else if (aNum == 360) {
-        console.log("It's a Circle ");
+        return "It's a Circle ";
     } else {
-        console.log("this is not a valid number");
+        return"This is not a valid number";
     }
 }
 
-angle(25);
-angle(60);
-angle(80);
-angle(90);
-angle(150);
-angle(180);
-angle(250);
-angle(360);
-angle(400);
+console.log(angle(25));
+console.log(angle(60));
+console.log(angle(80));
+console.log(angle(90));
+console.log(angle(150));
+console.log(angle(180));
+console.log(angle(250));
+console.log(angle(360));
+console.log(angle(400));
