@@ -17,11 +17,12 @@ function capitalize(string, all){
   if (all){
     return string.split(' ').map(function(a){
       return capitalize(a, false);
-    }).join(' ');
+    }).join(delimiter);
   } else {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
-
 }
-console.log(capitalize("keith is super crazy", false));
-console.log(capitalize("keith is super crazy", true));
+function sentenceCase(string){
+  return capitalize(string.toLowerCase(), false);
+}
+console.log(sentenceCase("THIS IS a teSt."));
