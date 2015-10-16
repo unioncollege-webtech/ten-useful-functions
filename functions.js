@@ -17,7 +17,7 @@ function capitalize(string, all){
   if (all){
     return string.split(' ').map(function(a){
       return capitalize(a, false);
-    }).join(delimiter);
+    }).join(' ');
   } else {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
@@ -25,4 +25,8 @@ function capitalize(string, all){
 function sentenceCase(string){
   return capitalize(string.toLowerCase(), false);
 }
-console.log(sentenceCase("THIS IS a teSt."));
+function camelCase(string){
+  var temp = capitalize(string.toLowerCase().replace('_',' '), true).replace(/\W/g, '');
+  return temp.charAt(0).toLowerCase() + temp.slice(1);
+}
+console.log(camelCase("THIS IS a teSt.! WOooooo_OOooO!"));
