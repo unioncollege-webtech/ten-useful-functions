@@ -26,7 +26,7 @@ function sentenceCase(string){
   return capitalize(string.toLowerCase(), false);
 }
 function camelCase(string){
-  var temp = capitalize(string.toLowerCase().replace('_',' '), true).replace(/\W/g, '');
+  var temp = capitalize(string.toLowerCase(), true).replace(/\W/g, '');
   return temp.charAt(0).toLowerCase() + temp.slice(1);
 }
 console.log(camelCase("THIS IS a teSt.! WOooooo_OOooO!"));
