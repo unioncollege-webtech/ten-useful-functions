@@ -1,4 +1,5 @@
 "use strict";
+
 module.exports = function(string){
     var output = "";
     var words = string.match(/\b[^\s]+\b/gi);
