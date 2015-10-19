@@ -63,9 +63,20 @@ function findMean() {
     return mean;
 }
 
+function findMedian(numbers) {
+    numbers.sort( function(a,b) {return a - b;} );
+
+    var half = Math.floor(numbers.length/2);
+
+    if(numbers.length % 2)
+        return numbers[half];
+    else
+        return (numbers[half-1] + numbers[half]) / 2.0;
+} 
+
 //console.log(exponential(3, 5));
 //console.log(DecimalToBinary(42));
 //console.log(DecimalToHexadecimal(34));
 //console.log(primeNumber(5));
 //console.log(factorization(35));
-console.log(findMean(1, 2, 4, 5, 75, 3, 6, 8));
+//console.log(findMedian([1, 78, 34, 65, 22, 31, 89]));
