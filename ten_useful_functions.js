@@ -50,8 +50,22 @@ function factorization(number) {
     return factors;
 }
 
+function findMean() {
+    var args = arguments;
+    var length = args.length;
+    var total = 0;
+    var mean;
+    
+    for (var i = 0; i < length; i++) {
+        total = total + args[i]; 
+    }
+    mean = total / length;
+    return mean;
+}
+
 //console.log(exponential(3, 5));
 //console.log(DecimalToBinary(42));
 //console.log(DecimalToHexadecimal(34));
 //console.log(primeNumber(5));
-console.log(factorization(35));
+//console.log(factorization(35));
+console.log(findMean(1, 2, 4, 5, 75, 3, 6, 8));
