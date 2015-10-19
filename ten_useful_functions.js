@@ -29,7 +29,6 @@ function exponential(number, exponent) {
     return number;
 }
 
-
 function primeNumber(number) {
    for(var i = 2; i < number; i++) {
         if (number % i === 0) {
@@ -39,12 +38,20 @@ function primeNumber(number) {
     return number > 1;
 }
 
-
-function factorization() {
+function factorization(number) {
+    var factors = [];
     
+    for (var i = 2; i <= number; i++) {
+        while ((number % i) === 0) {
+            factors.push(i);
+            number /= i;
+        }
+    }
+    return factors;
 }
 
 //console.log(exponential(3, 5));
 //console.log(DecimalToBinary(42));
 //console.log(DecimalToHexadecimal(34));
-console.log(primeNumber(5));
+//console.log(primeNumber(5));
+console.log(factorization(35));
