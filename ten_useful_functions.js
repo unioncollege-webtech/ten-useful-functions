@@ -29,18 +29,22 @@ function exponential(number, exponent) {
     return number;
 }
 
-/*
-function primeNumbers(number) {
-    //check if number has a remainder
-    if ((number % anyNumber) !== 0) return true;
-    //check if number is non divisible
+
+function primeNumber(number) {
+   for(var i = 2; i < number; i++) {
+        if (number % i === 0) {
+            return false;
+        }
+    }
+    return number > 1;
 }
-*/
+
 
 function factorization() {
     
 }
 
-console.log(exponential(3, 5));
-console.log(DecimalToBinary(42));
-console.log(DecimalToHexadecimal(34));
+//console.log(exponential(3, 5));
+//console.log(DecimalToBinary(42));
+//console.log(DecimalToHexadecimal(34));
+console.log(primeNumber(5));
