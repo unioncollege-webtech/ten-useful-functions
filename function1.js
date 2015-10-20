@@ -18,7 +18,8 @@ function angle (aNum) {
     }
 }
 
-console.log(angle(25));
+ 
+console.log(angle());
 console.log(angle(60));
 console.log(angle(80));
 console.log(angle(90));
@@ -27,3 +28,5 @@ console.log(angle(180));
 console.log(angle(250));
 console.log(angle(360));
 console.log(angle(400));
+
+
