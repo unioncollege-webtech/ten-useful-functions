@@ -80,4 +80,13 @@ function range(start, end, step){
   return arr;
 }
 
-console.log(range(10,-5,-1));
+function largest(a, b){
+  return (a > b) ? a : b;
+}
+
+function smallest(a, b){
+  return (a < b) ? a : b;
+}
+
+console.log(largest(3,2));
+console.log(smallest(3,2));
