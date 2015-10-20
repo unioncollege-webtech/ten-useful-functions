@@ -88,5 +88,25 @@ function smallest(a, b){
   return (a < b) ? a : b;
 }
 
-console.log(largest(3,2));
-console.log(smallest(3,2));
+function isAnswer(attempt){
+  if (attempt == 42){
+    return true;
+  } else {
+    return false;
+  }
+}
+
+var hitchhikers = ['Ford Prefect', 'Zaphod Beeblebrox', 'Oolon Colluphid', 'Arthur Dent', 'Trisha McMillan', 'Marvin'];
+var numbers = range(0,50,14);
+var strings = ['Leetzorz', 'This is a cool test sentence that is longer than it needs to be.', "Don't Panic", 'Peter Piper picked a peck of pickled peppers.'];
+
+console.log(largest(1,2) + " is bigger than " + smallest(1,2) + ".");
+
+if(numbers.map(isAnswer)){
+  console.log(leet("42 is the answer to life, the universe, and everything."));
+}
+
+console.log(hitchhikers.map(camelCase));
+console.log(hitchhikers.map(sentenceCase));
+
+console.log(strings.map(leet))
