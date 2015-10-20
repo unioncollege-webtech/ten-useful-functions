@@ -62,14 +62,22 @@ function leet(string){
 
 function range(start, end, step){
   var arr = [];
-  if(!step){
+  if(!step){ // Also works for step == 0
     step = 1;
   }
-  //if(step >= 0)
-  for(var i = start; i < end + 1; i = i + step){
-    arr.push(i);
+  step = Math.trunc(step);
+  if(start < end){
+    for(var i = start; i < end; i = i + step){
+      arr.push(i);
+    }
+  } else {
+    if(step < 0){
+      for(var i = start; i > end; i = i + step){
+        arr.push(i);
+      }
+    }
   }
   return arr;
 }
 
-console.log(range(1,10,1.1));
+console.log(range(10,-5,-1));
