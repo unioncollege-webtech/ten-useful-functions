@@ -1,18 +1,11 @@
-//-- upperCase(string): Return `string` in all CAPITAL LETTERS.
-//-- lowerCase(string): Return `string` in all lowercase letters.
-//-- capitalize(string): Return `string` with the first letter Capitalized.
-//-- sentenceCase:  Return `string` with the first letter capitalized, and convert the rest of the string to lowercase.
-//-- titleCase(string): Return `string` with Every Word Capitalized.
-//-- camelCase(string): Return `string` converted to camelCase by capitalizing all words but the first, and removing all non-word characters (everything but a–z, A–Z, 0–9, and _ (underscore)). For example: "Bermuda Love Triangle is Awesome!!" would be converted to "bermudaLoveTriangleIsAwesome".
-//-- snakeCase(string): Return `string` converted to "snake_case": separate out all "camelCased" words, lowercase all characters, and replace non-word characters (or multiple non-word characters) with a single underscore. Remove beginning or trailing underscores.
-//-- kebobCase(string): Return `string` converted to "snake_case": separate out all "camelCased" words, lowercase all characters, and replace non-word characters (or multiple non-word characters) with a hyphen (-). Remove beginning or trailing underscores.
-
 function upperCase(string){
   return string.toUpperCase();
 }
+
 function lowerCase(string){
   return string.toLowerCase();
 }
+
 function capitalize(string, all){
   if (all){
     return string.split(' ').map(function(a){
@@ -22,11 +15,47 @@ function capitalize(string, all){
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
 }
+
 function sentenceCase(string){
   return capitalize(string.toLowerCase(), false);
 }
+
 function camelCase(string){
   var temp = capitalize(string.toLowerCase(), true).replace(/\W/g, '');
   return temp.charAt(0).toLowerCase() + temp.slice(1);
 }
-console.log(camelCase("THIS IS a teSt.! WOooooo_OOooO!"));
+
+function leet(string){
+  var charReplacements = {
+    'A': '4',
+    'B': '8',
+//    'C': '<',
+//    'D': '|)',
+    'E': '3',
+//    'F': '|=',
+    'G': '6',
+//    'H': '|-|',
+    'I': '1',
+//    'J': '_|',
+//    'K': '|<',
+//    'L': '|_',
+//    'M': '|\\/|',
+//    'N': '|\\|',
+    'O': '0',
+//    'P': '|o',
+//    'Q': 'O_',
+//    'R': '|2',
+    'S': '5',
+    'T': '7',
+//    'U': '|_|',
+//    'V': '\\/',
+//    'X': '%',
+//    'Y': '`/',
+    'Z': '2'
+  }
+  for (char in charReplacements){
+    string =  string.toUpperCase().replace(new RegExp(char, 'g'), charReplacements[char]);
+  }
+  return string.toLowerCase();
+}
+console.log(leet("This is a super duper leet text test."));
