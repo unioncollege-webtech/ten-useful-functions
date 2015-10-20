@@ -26,6 +26,7 @@ function camelCase(string){
 }
 
 function leet(string){
+  // Commented out most characters because it gets too undreadable with them all.
   var charReplacements = {
     'A': '4',
     'B': '8',
@@ -58,4 +59,17 @@ function leet(string){
   }
   return string.toLowerCase();
 }
-console.log(leet("This is a super duper leet text test."));
+
+function range(start, end, step){
+  var arr = [];
+  if(!step){
+    step = 1;
+  }
+  //if(step >= 0)
+  for(var i = start; i < end + 1; i = i + step){
+    arr.push(i);
+  }
+  return arr;
+}
+
+console.log(range(1,10,1.1));
