@@ -106,6 +106,7 @@ function lowerCase(words) {
 //console.log(DecimalToHexadecimal(34));
 //console.log(primeNumber(5));
 //console.log(factorization(35));
+//console.log(findMean(1, 5, 3, 79, 36));
 //console.log(findMedian([1, 78, 34, 65, 22, 31, 89]));
 //console.log(largest(43, 23));
 //console.log(smallest(14, 89));
