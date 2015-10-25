@@ -16,6 +16,10 @@ function capitalize(string, all){
   }
 }
 
+function kebabCase(string){
+  return string.toLowerCase().replace(/ /g, '-');
+}
+
 function sentenceCase(string){
   return capitalize(string.toLowerCase(), false);
 }
