@@ -1,6 +1,6 @@
 var str = "hello everyone";
 
-function tostring(){
+function toString(){
     return str.toString(str);
 }
-console.log(tostring(str));
+console.log(toString(str));
