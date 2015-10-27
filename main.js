@@ -31,3 +31,49 @@ var camel = camelcase(base);
 var snake = snake_case(camel);
 
 var kebob = kebobcase(camel);
+
+console.log(numRange.reduce(function(a,b){
+    return a+b;
+},0));
+
+var testArray = range(0,25,1);
+
+console.log(testArray.some(greaterthanFive));
+
+console.log(testArray.some(greaterthanTen));
+
+console.log(testArray.some(lessthanSix));
+
+console.log(testArray.some(lessthanequaltoTen));
+
+var anotherTestArray = [5,2,16,3,7,0,33,4,100,32,54,63];
+
+console.log(anotherTestArray.reduce(function(a,b)
+{
+    return largest(a,b);
+}));
+
+
+var functionNames = ["Greater than Eight", "Magical Mystical Code Here!!", "please dont upset the Monkey"];
+
+var sentenceCases = functionNames.map(function(value){
+    return sentenceCase(value);
+});
+console.log(sentenceCases);
+
+var camelCases = functionNames.map(function(value){
+    return camelcase(value);
+});
+console.log(camelCases);
+
+var kebobCases = camelCases.map(function(value){
+    return kebobcase(value);
+});
+console.log(kebobCases);
+
+var snakeCases = camelCases.map(function(value){
+    return snake_case(value);
+});
+console.log(snakeCases);
+
+console.log()
