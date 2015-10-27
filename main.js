@@ -38,13 +38,13 @@ console.log(numRange.reduce(function(a,b){
 
 var testArray = range(0,25,1);
 
-console.log(testArray.some(greaterthanFive));
+console.log(testArray.filter(greaterthanFive));
 
-console.log(testArray.some(greaterthanTen));
+console.log(testArray.filter(greaterthanTen));
 
-console.log(testArray.some(lessthanSix));
+console.log(testArray.filter(lessthanSix));
 
-console.log(testArray.some(lessthanequaltoTen));
+console.log(testArray.filter(lessthanequaltoTen));
 
 var anotherTestArray = [5,2,16,3,7,0,33,4,100,32,54,63];
 
