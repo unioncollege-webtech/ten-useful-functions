@@ -1,10 +1,17 @@
 //this should be working
 
-
+var word = "cat"
 
 function finds(string) {
-    string.split();
-    return string.find("full");
+    var newString = string.split(" ");
+    for(var i = 0; i <= string.length; i++) {
+        if([i] == word) {
+            console.log([i])
+        } else {
+            console.log("not a word")
+        }
+    }
+    return newString;
 }
 
-console.log(finds("the cat in the hat is full of food"));
+finds("the cat in the hat is full of food");

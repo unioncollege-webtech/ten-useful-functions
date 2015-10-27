@@ -1,7 +1,7 @@
 
 function kebobCase(string) {
     var aString = string.split(" ").join("-");
-    console.log(aString);
+    return aString;
 }
 
 
