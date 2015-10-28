@@ -1,14 +1,25 @@
 
-
-function filtered(board) {
-    for(var i=0; i <= board.length();i++){
-        if (board[i] == "K") {
-            conosle.log(true)
+function largest(a,b) {
+    if(typeof a == "number" && typeof b == "number") {
+        if(a > b) {
+            return a;
+        } else if(a < b) {
+            return b;
         }else {
-            console.log(board[i])
+            return "not a valid entry";
         }
     }
-    
-};
+    else if(typeof a == "string" && typeof b == "string"){
+        if (a.length > b.length) {
+            return a;
+        }else if(a.length < b.length) {
+            return b;
+        } else {
+            return "not a valid entry";
+        }
+    }else {
+        return "wrong";
+    }
+}
 
-console.log(board(['R','N','B','Q','K','B','N','R']))
+console.log(largest('cat','dog'));
