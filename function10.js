@@ -22,4 +22,4 @@ function largest(a,b) {
     }
 }
 
-console.log(largest('cat','dog'));
+console.log(largest('Mad Hatter','dog'));
