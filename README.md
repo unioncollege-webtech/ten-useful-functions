@@ -1,6 +1,8 @@
 Ten Useful Functions
 ====================
 
+[![Join the chat at https://gitter.im/unioncollege-webtech/ten-useful-functions](https://badges.gitter.im/unioncollege-webtech/ten-useful-functions.svg)](https://gitter.im/unioncollege-webtech/ten-useful-functions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Write ten functions that are useful in some way, and demonstrate their use both by calling them directly and by passing them to [Array iteration methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods) like .map(), .forEach(), .filter(), .reduce(), .every().
 
 Description
